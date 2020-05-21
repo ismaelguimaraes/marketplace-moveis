@@ -1,10 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router } from 'react-router-dom';
 
-function App() {
+import Routes from './routes';
+
+interface Props {}
+
+const App: React.FC<Props> = () => {
   return (
-    <div className="App">
-      <h1>Teste</h1>
-    </div>
+    <Router>
+      <Routes />
+    </Router>
   );
 }
 

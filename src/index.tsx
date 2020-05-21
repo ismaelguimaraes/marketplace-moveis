@@ -1,7 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './pages/App';
+import WebFont from 'webfontloader';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import * as serviceWorker from './serviceWorker';
+
+WebFont.load({
+  google: {
+    families: ['Open Sans', 'sans-serif']
+  }
+});
 
 ReactDOM.render(
   <React.StrictMode>
