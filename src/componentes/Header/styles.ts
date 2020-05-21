@@ -11,14 +11,17 @@ export const NavBar = styled(Navbar)`
     box-shadow: 0 4px 2px -3.5px rgba(0,0,0,0.2);
 `
 
-export const Login = styled.a`
+export const Login = styled.button`
     color: #686868;
-    text-decoration: none;
     transition: all 0.4s ease;
+    background: none;
+    border: 0;
+    outline: 0;
 
     &:hover, &:focus {
         color: ${darken(0.10, '#686868')};
         text-decoration: none;
+        outline: 0;
     }
     
     span {
